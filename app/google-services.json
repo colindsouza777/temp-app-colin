@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1091287619513",
+    "firebase_url": "https://javasem3-project.firebaseio.com",
+    "project_id": "javasem3-project",
+    "storage_bucket": "javasem3-project.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1091287619513:android:edf89e0990e7598b7e0868",
+        "android_client_info": {
+          "package_name": "com.example.java_sem3_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1091287619513-as6g2ljia8g6o41mumblpdpjks0h1prm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.java_sem3_project",
+            "certificate_hash": "d02cf2b22fd72f973ea43df74725ef5f78375e5c"
+          }
+        },
+        {
+          "client_id": "1091287619513-9bv7rs6d0dn30226cv6gt7092pki5gaj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAwlLTrT-XB7BacOAG1TZ4TwSr-_ti0_to"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1091287619513-9bv7rs6d0dn30226cv6gt7092pki5gaj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

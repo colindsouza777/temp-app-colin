@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StudentReg">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="794dp"
+
+            tools:context=".StudentReg">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="233dp"
+                android:layout_height="49dp"
+                android:layout_marginTop="0.8dp"
+                android:fontFamily="sans-serif-black"
+                android:gravity="center"
+                android:text="@string/register"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView"
+                app:layout_constraintVertical_bias="0.062" />
+
+            <EditText
+                android:id="@+id/sregname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/name"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView2"
+                app:layout_constraintVertical_bias="0.04" />
+
+            <TextView
+                android:id="@+id/year"
+                android:layout_width="65dp"
+                android:layout_height="wrap_content"
+                android:text="@string/year"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.257"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregemail"
+                app:layout_constraintVertical_bias="0.02" />
+
+            <EditText
+                android:id="@+id/sregphone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="@string/phone_number"
+                android:inputType="phone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregbatch"
+                app:layout_constraintVertical_bias="0.108"
+                android:autofillHints="" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="393dp"
+                android:layout_height="75dp"
+                android:fontFamily="cursive"
+                android:gravity="center"
+                android:text="Fr. Conceicao Rodrigues College of Engineering"
+                android:textSize="30sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.023" />
+
+            <EditText
+                android:id="@+id/sregemail"
+                android:layout_width="206dp"
+                android:layout_height="39dp"
+                android:layout_marginBottom="172dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.453"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregrollno"
+                app:layout_constraintVertical_bias="0.086" />
+
+            <EditText
+                android:id="@+id/sregpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Password"
+                android:inputType="textPassword"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.442"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregphone" />
+
+            <EditText
+                android:id="@+id/sregrollno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="center"
+                android:hint="Roll no"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.462"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregname"
+                app:layout_constraintVertical_bias="0.041" />
+
+            <RadioGroup
+                android:id="@+id/sregyear"
+                android:layout_width="155dp"
+                android:layout_height="132dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.337"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/year"
+                app:layout_constraintVertical_bias="0.0">
+
+                <RadioButton
+                    android:id="@+id/sregfe"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="FE" />
+
+                <RadioButton
+                    android:id="@+id/sregse"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="SE" />
+
+                <RadioButton
+                    android:id="@+id/sregte"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="TE" />
+
+                <RadioButton
+                    android:id="@+id/sregbe"
+                    android:layout_width="62dp"
+                    android:layout_height="wrap_content"
+                    android:text="BE" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/sregbatch"
+                android:layout_width="83dp"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:hint="Batch"
+                android:inputType="textPersonName"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.262"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregyear"
+                app:layout_constraintVertical_bias="0.051" />
+
+            <Button
+                android:id="@+id/sregbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Sign up"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.523"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregpassword" />
+
+            <RadioGroup
+                android:id="@+id/sregbranch"
+                android:layout_width="143dp"
+                android:layout_height="132dp"
+                android:layout_marginBottom="184dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.899"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3"
+                app:layout_constraintVertical_bias="0.028">
+
+                <RadioButton
+                    android:id="@+id/sregcomps"
+                    android:layout_width="90dp"
+                    android:layout_height="wrap_content"
+                    android:text="Comps" />
+
+                <RadioButton
+                    android:id="@+id/sregecs"
+                    android:layout_width="83dp"
+                    android:layout_height="wrap_content"
+                    android:text="ECS" />
+
+                <RadioButton
+                    android:id="@+id/sregmech"
+                    android:layout_width="119dp"
+                    android:layout_height="wrap_content"
+                    android:text="Mechanical" />
+
+                <RadioButton
+                    android:id="@+id/sregprod"
+                    android:layout_width="111dp"
+                    android:layout_height="wrap_content"
+                    android:text="Production" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="70dp"
+                android:layout_height="wrap_content"
+                android:text="Branch"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.706"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/sregemail"
+                app:layout_constraintVertical_bias="0.027" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</ScrollView>
